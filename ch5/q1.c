@@ -25,5 +25,11 @@ int main(int argc, char *argv[]) {
         x = 300;
         printf("Parent process (after fork, after change): x = %d\n", x);
     }
+    printf("\n");
     return 0;
 }
+
+/*
+    Moral of the story:
+    Calling fork() makes a copy of the parent process, including the variables.
+*/
